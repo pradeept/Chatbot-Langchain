@@ -36,11 +36,7 @@ export async function perplexity(
   const template1 = 'The translation of "{input}" into {language} is:';
   const template2 = "Here is the translation of your input into {language}:";
 
-  const system = `You are a translator. Translate the user's input from English into {language}.  
-- If the input contains fewer than 10 words, begin your response with: ${template1}.  
-- If the input contains 10 words or more, begin your response with: ${template2}.  
-Only provide the translation itself — do not add explanations, formatting symbols (e.g., asterisks), reference numbers, or extra details.
-`
+  const system = `You are a translator. Translate the user's input from English into {language}.  - If the input contains fewer than 10 words, begin your response with: ${template1}.  - If the input contains 10 words or more, begin your response with: ${template2}.  Only provide the translation itself — do not add explanations, formatting symbols (e.g., asterisks), reference numbers, or extra details.`
 
   const translatorTemplate = ChatPromptTemplate.fromMessages([
     ["system", system],

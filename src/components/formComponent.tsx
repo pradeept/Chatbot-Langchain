@@ -14,7 +14,11 @@ function FormComponent() {
     setLoading(true);
     // Use EventSource for SSE
     // NOTE: Fetch is not a best option for SSE
-    const url = `${process.env.NODE_ENV==="development" ? "http://localhost:3000" : process.env.HOST}/api/perplexity?language=${language}&text=${input}`;
+    const base =
+      process.env.NODE_ENV === "development"
+        ? "http://localhost:3000"
+        : process.env.NEXT_PUBLIC_HOST;
+    const url = `${base}/api/perplexity?language=${language}&text=${input}`;
     const eventSource = new window.EventSource(url);
 
     eventSource.onmessage = (event) => {
