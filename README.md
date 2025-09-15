@@ -18,6 +18,10 @@
 - Refining LLM response ✅
 - Response streaming(SSE) with UX ✅
 
-### SS 🖼️
+### Flow Diagram
 
-![SS](./v1_SS.png)
+![Flow](./assets/streaming.png)
+
+### Screen Shots 🖼️
+
+![SS](./assets/v1_SS.png)
