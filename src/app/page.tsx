@@ -15,7 +15,7 @@ async function page() {
           </p>
         </div>
         <a
-          href='https://github.com/pradeept/Chatbot-Langchain'
+          href='https://github.com/pradeept/LingoGo'
           target='_blank'
           rel='noopener noreferrer'
           className='bg-slate-200 rounded p-1 absolute right-5 md:right-10'
